@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Choose Your Character</title>
-    </head>
     <body>
         <h1>Choose your Character</h1>
         <pre> <h2>
@@ -29,4 +28,5 @@
       │  │  │                  │  │  │                ⌐⌐⌐ ¬¬¬   │     
      ───  ─────        *     {──── ────}                              </h2> </pre> 
     </body>
+    </head> 
 </html>
