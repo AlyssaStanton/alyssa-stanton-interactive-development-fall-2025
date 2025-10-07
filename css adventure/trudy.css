@@ -64,7 +64,7 @@
 
 .stats {
     margin-top:100px;
-    font-size: 4rem;
+    font-size: 1rem;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -79,10 +79,14 @@
 }
 @font-face {
     font-family: "Sdfortimburtondemo";
+ font-family: "Sdfortimburtondemo";
 
-    src: local("Sdfortimburtondemo-ALoW2"), local("Sdfortimburtondemo"),
-         url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
+    src: url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
 }
