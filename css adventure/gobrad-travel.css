@@ -1,0 +1,39 @@
+#image {
+    max-width: 2300px;
+    margin: 0;
+}
+
+#image img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.choose-btn {
+    margin-top:100px;
+    display: inline-block;
+    background: #323232;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
+    font-size: 8rem;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10px;}
+
+    .text-box {
+        padding:10px;
+    width: 2300px;
+    margin-left:10px;
+    font-size:6rem;
+    outline:black solid 2px;
+    min-height:300px;
+    margin-top:10px;
+    margin-bottom:10px;
+    }
+
+    .NamePlate {
+        font-size:10rem;
+        font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
+    }
