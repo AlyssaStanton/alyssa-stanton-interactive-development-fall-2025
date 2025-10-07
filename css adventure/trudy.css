@@ -1,6 +1,6 @@
 
 .choose-btn {
-    margin-top:100px;
+    margin-top: -500;
     display: inline-block;
     background: #323232;
     color: #fff;
@@ -10,7 +10,7 @@
     text-decoration: none;
     border-radius: 6px;
     border: none;
-    margin-left: 10;
+    margin-left: 25%;
 }
 .choose-btn:hover {
    
@@ -23,7 +23,7 @@
 
 .inside-box {
     display: grid;
-    grid-template-columns: 600px 1fr 1020px; 
+    grid-template-columns: 600px 2fr 1020px; 
     gap: 48px;
     align-items: start;
 }
@@ -49,27 +49,33 @@
 
 .trudy-title {
     font-size: 9rem;
-    margin-left: 400px;
+    width: 100%;
+    margin: 0;
+    text-align: left;
 }
 
 .trudy-body {
-    font-size: 7rem;
+    font-size: 3rem;
     color: #333;
-    margin-left:400px;
+    width: 100%;
+    margin: 0;
+    text-align: left;
 }
 
 .stats {
     margin-top:100px;
     font-size: 4rem;
-    margin-left: 370px;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     text-align: left;
 }
 
 .choose-row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 40px;
+    margin-left: 0;
 }
 @font-face {
     font-family: "Sdfortimburtondemo";
