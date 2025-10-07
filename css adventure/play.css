@@ -83,3 +83,11 @@ figure {
     }
     .caption { font-size: 1rem; }
 }
+
+@font-face {
+    font-family: "Sdfortimburtondemo";
+    src: url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
