@@ -1,0 +1,29 @@
+img {
+    width:1800px;
+    height:auto;
+    display:inline-block;
+}
+
+#text-box {
+    margin-top:50px;
+    margin-bottom:40px;
+    padding:15px;
+    font-size:4rem;
+    max-width:1770px;
+    height:auto;
+    outline: black solid 2px;
+}
+
+#button {
+    margin-top:10px;
+    display: inline-block;
+    background: #323232;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
+    font-size: 10rem;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10;
+}
