@@ -1,0 +1,54 @@
+.intro-img{
+   
+    width: 2710px;
+    height: auto;
+    max-width: none;
+    display: block;
+}
+
+.intro { position: relative; }
+
+/* for dragon adventure font */
+.font-face {
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: clamp(36px, 6vw + 2rem, 220px);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    max-width: 1200px;
+    margin: 0.5rem 0 1rem 18%;
+    color: #292828; 
+}
+
+.play-button {
+    position: absolute;
+    /* NTS: make the outline visible if you need to know where the button is! */ 
+    left: 34%;
+    top: 78%;
+    width: 25%;
+    height: 45%;
+    transform: translate(-50%, -50%);
+    background-color:red;
+    border-radius: 50%;
+    background: transparent;
+    outline: transparent;
+    display: block;
+    z-index: 9999;
+    pointer-events: auto;
+    margin-left:500px;
+}
+
+@font-face {
+    font-family: "DRAGON HUNTER";
+    src: url("DRAGON HUNTER.otf") format("opentype"),
+         url("DRAGON%20HUNTER.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    
+}
+
+body {
+    font-family: "DRAGON HUNTER", sans-serif;
+}
