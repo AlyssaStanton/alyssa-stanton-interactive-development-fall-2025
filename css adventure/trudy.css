@@ -1,0 +1,82 @@
+
+.choose-btn {
+    margin-top:100px;
+    display: inline-block;
+    background: #323232;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
+    font-size: 8rem;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10;
+}
+.choose-btn:hover {
+   
+}
+.char-frame img {
+    width: 600px;
+    height: auto;
+    display: inline-block;
+}
+
+.inside-box {
+    display: grid;
+    grid-template-columns: 600px 1fr 1020px; 
+    gap: 48px;
+    align-items: start;
+}
+
+.full-body img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.full-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 24px;
+}
+
+.trudy-title {
+    font-size: 9rem;
+    margin-left: 400px;
+}
+
+.trudy-body {
+    font-size: 7rem;
+    color: #333;
+    margin-left:400px;
+}
+
+.stats {
+    margin-top:100px;
+    font-size: 4rem;
+    margin-left: 370px;
+    width: 100%;
+    text-align: left;
+}
+
+.choose-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+@font-face {
+    font-family: "Sdfortimburtondemo";
+
+    src: local("Sdfortimburtondemo-ALoW2"), local("Sdfortimburtondemo"),
+         url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
