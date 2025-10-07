@@ -1,4 +1,11 @@
- #image {
+ @font-face {
+    font-family: "Sdfortimburtondemo";
+    src: url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+#image {
     max-width: 2300px;
     margin: 0;
 }
@@ -37,10 +44,4 @@
         font-size:10rem;
         font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
     }
-    @font-face {
-    font-family: "Sdfortimburtondemo";
-    src: url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+   
