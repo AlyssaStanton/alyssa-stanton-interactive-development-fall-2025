@@ -1,0 +1,39 @@
+#button{
+    margin-top:12px;
+    display: block; 
+    width: fit-content;
+    background: #323232;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
+    font-size: 15rem;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    text-align: left;
+
+}
+img {
+    width:1800px;
+    height:auto;
+    display: block;
+}
+#text-box{
+    margin-top:1px;
+    margin-bottom:40px;
+    padding:15px;
+    font-size:16rem;
+    max-width:1970px;
+    height:auto;
+    outline: black solid 2px;
+}
+#NamePlate {
+    margin-top:100px;
+    margin-bottom:1px;
+    font-size: 26rem;
+    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
+}
+
+#text{
+    font-size:10rem;
+}
