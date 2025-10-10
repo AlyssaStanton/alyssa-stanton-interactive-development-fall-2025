@@ -1,0 +1,83 @@
+html{
+    line-height:1.3;
+}
+
+#content {
+    position: relative;
+}
+#content::before { 
+    /* this is the green bar */
+    content: "";
+    color:#f9f9f9;
+    position: absolute;
+    top: -20px;
+    right: -78px;
+    width: 410px;
+    height: 150px;
+    background: rgb(47, 66, 47);
+    border-top-left-radius: 39px;
+    border-top-right-radius: 39px;
+    margin: 10;
+    z-index: 0;
+}
+#content > * {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+#cocktail-menu-boundary {
+    border: rgb(47, 66, 47) solid 3px;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 45px;
+}
+
+h1{
+    font-size: 1rem;
+    font-weight:bold;
+    font-family:sans-serif;
+    max-width:360px;
+    margin:0px;
+    
+}
+
+p{
+    margin-top:1px;
+    font-size:15px;
+    padding:0px;
+    font-family: serif;
+    font-weight: medium;
+}
+
+#content {
+    margin:  auto;
+    padding: 20px;
+    padding-top: 180px;
+    max-width: 210px;
+}
+
+.outer-boundary {
+    border: rgb(47, 66, 47) solid 1px;
+    padding: 1.75px;
+    border-radius: 45px;
+    max-width: 410px;
+}
+
+#price {
+    font-weight:normal;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:13px;
+
+}
+
+textpath {
+    color:white;
+    font-family:sans-serif;
+}
