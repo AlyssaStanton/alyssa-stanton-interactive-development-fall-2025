@@ -9,6 +9,9 @@ body {
   background-color: #d4e1f6; 
   color: #6393b3;
   font-size:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -16,6 +19,8 @@ header {
   color: white;
   text-align: center;
   padding: calc(2rem * 1.3);
+  position: relative; 
+  overflow: hidden;   
 }
 
 .header-row {
@@ -37,7 +42,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 32px; /* Increased gap between boxes */
+  gap: 32px; 
   margin: 40px auto;
   max-width: 900px;
 }
@@ -46,7 +51,7 @@ header {
   background: #f9f9f9;
   border: 2px solid #465f80;
   border-radius: 16px;
-  padding: 32px 40px; /* Increased internal padding */
+  padding: 32px 40px; 
   text-align: center;
   min-width: 180px;
   box-shadow: 0 2px 8px rgba(134, 156, 201, 0.08);
@@ -61,15 +66,16 @@ pre{
 main {
   padding-left:calc(2rem * 1.3);
   margin-top:calc(2rem * 1.3);
+  flex: 1;
 }
 
 ul{font-size: 4rem;
-color: #567ec0; /* Change to blue color */
+color: #567ec0; 
 margin:0;
 }
 
 .box a {
-  color: #567ec0; /* Change to blue color */
+  color: #567ec0; 
   
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -83,12 +89,15 @@ margin:0;
   text-decoration:wavy;
 }
 
-h2{
+h2 {
   display: block;
   margin-bottom: calc(2rem * 1.3);
-  margin-top:0;
-  font-size: 4rem; /* Match with .box a font size */
-  color: #567ec0;  /* Match link color */
+  margin-top: 50px;
+  font-size: 6rem;      
+  color: #567ec0;
+  text-align: center;   
+  font-weight: bold;
+  font-family:sans-serif;
 }
 
 select {
@@ -103,7 +112,7 @@ select {
 }
 
 h1 {
-  font-size: 4rem; /* Increase this value for even larger text */
+  font-size: 4rem; 
   font-weight: bold;
   margin: 0 0 2rem 0;
   color: white;
@@ -131,9 +140,27 @@ h1 {
 }
 
 .body-clouds {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+footer {
+  background: #567ec0;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  margin-top: 1rem;
+
+}
+
+main .grid:last-of-type {
+  margin-bottom: 0;
 }
 
 @media (max-width: 900px) {
