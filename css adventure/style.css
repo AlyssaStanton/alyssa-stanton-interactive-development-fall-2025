@@ -1,26 +1,33 @@
 .intro-img{
    
-    width: 2710px;
+    width: 100%;
     height: auto;
     max-width: none;
     display: block;
     margin: 0 auto;
 }
 
-.intro { position: relative; }
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Adjust as needed for vertical centering */
+    text-align: center;
+    position: relative;
+}
 
 /* for dragon adventure font */
 .font-face {
     position: relative;
     display: block;
-    text-align: center;
     font-size: clamp(36px, 6vw + 2rem, 220px);
     line-height: 0.9;
     letter-spacing: 0.02em;
     max-width: 1200px;
     margin: 0.5rem auto 1rem auto;
-    margin-left: 700px;
     color: #292828; 
+    margin-left:20px;
 }
 
 .play-button {
