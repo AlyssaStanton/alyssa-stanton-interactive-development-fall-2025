@@ -11,10 +11,10 @@ html{
     color:#f9f9f9;
     position: absolute;
     top: -20px;
-    right: -61px;
-    width: 369px;
-    height: 150px;
-    background: rgb(59, 75, 59);
+    right: -53px;
+    width: 355px;
+    height: 160px;
+    background: #304734;
     border-top-left-radius: 39px;
     border-top-right-radius: 39px;
     margin: 10;
@@ -26,7 +26,7 @@ html{
     display: inline-block;
 }
 #cocktail-menu-boundary {
-    border: rgb(68, 91, 68) solid 3px;
+    border: #304734 solid 3px;
     max-width: 400px;
     padding: 20px;
     border-radius: 5px;
@@ -56,15 +56,15 @@ p{
 #content {
     margin:  auto;
     padding: 20px;
-    padding-top: 180px;
+    padding-top: 200px;
     max-width: 210px;
 }
 
 .outer-boundary {
-    border: rgb(67, 89, 67) solid 1px;
+    border: #304734 solid 1px;
     padding: 1.75px;
     border-radius: 45px;
-    max-width: 370px;
+    max-width: 361px;
 }
 
 #price {
@@ -84,10 +84,24 @@ textpath {
 
 #cocktail-top-img {
     position: absolute;
-    top: -10px; /* sits on the green bar */
+    top: 10px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 160px;
-    height: auto;
+    width: 80%;
+    max-width: 360px; /* Increased from 320px */
     z-index: 2;
+}
+
+.menu-link {
+    margin-left: 60px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.menu-link a {
+    color: #304734; /* Charleston green */
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
 }
