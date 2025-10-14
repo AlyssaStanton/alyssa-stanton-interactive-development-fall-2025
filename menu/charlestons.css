@@ -11,10 +11,10 @@ html{
     color:#f9f9f9;
     position: absolute;
     top: -20px;
-    right: -78px;
-    width: 410px;
+    right: -61px;
+    width: 369px;
     height: 150px;
-    background: rgb(47, 66, 47);
+    background: rgb(59, 75, 59);
     border-top-left-radius: 39px;
     border-top-right-radius: 39px;
     margin: 10;
@@ -26,8 +26,8 @@ html{
     display: inline-block;
 }
 #cocktail-menu-boundary {
-    border: rgb(47, 66, 47) solid 3px;
-    max-width: 420px;
+    border: rgb(68, 91, 68) solid 3px;
+    max-width: 400px;
     padding: 20px;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -61,10 +61,10 @@ p{
 }
 
 .outer-boundary {
-    border: rgb(47, 66, 47) solid 1px;
+    border: rgb(67, 89, 67) solid 1px;
     padding: 1.75px;
     border-radius: 45px;
-    max-width: 410px;
+    max-width: 370px;
 }
 
 #price {
@@ -80,4 +80,14 @@ p{
 textpath {
     color:white;
     font-family:sans-serif;
+}
+
+#cocktail-top-img {
+    position: absolute;
+    top: -10px; /* sits on the green bar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: auto;
+    z-index: 2;
 }
