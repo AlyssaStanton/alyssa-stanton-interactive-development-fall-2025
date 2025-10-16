@@ -4,7 +4,6 @@
     background: #323232;
     color: #fff;
     padding: 10px 20px;
-    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
     font-size: 5rem;
     text-decoration: none;
     border-radius: 6px;
@@ -12,7 +11,7 @@
     margin-left: 10px;
 }
 img {
-    width:1900px;
+    width:100%;
     height:auto;
     display:inline-block;
     margin-bottom:1px;
