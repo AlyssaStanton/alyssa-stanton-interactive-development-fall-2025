@@ -30,8 +30,8 @@
 }
 
 .page-footer {
-    position: absolute; /* Position the footer relative to the boundary */
-    bottom: 0; /* Stick to the bottom of the boundary */
+    position: absolute; 
+    bottom: 0; 
     left: 0;
     width: 100%;
     height: 60px;
@@ -63,7 +63,7 @@ body {
 .text-content {
     max-width: 600px;
     margin: 30px auto 0 auto;
-    padding: 10px 24px 48px; /* thisextra bottom padding so content sits above footer */
+    padding: 10px 24px 48px; 
     text-align: left;
     font-size: 1.1rem;
     line-height: 24px;
@@ -99,7 +99,7 @@ body {
     .text-content {
         max-width: 95vw;
         font-size: 1rem;
-        padding: 6px 12px 40px; /* keep bottom spacing on small screens */
+        padding: 6px 12px 40px; 
     }
     .page-footer img {
         width: 100vw;
@@ -158,7 +158,7 @@ html {
     max-width: 600px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     background-color: #fff; 
-    position: relative; /* Ensure the footer is positioned relative to this box */
+    position: relative; 
     top: 0;
     left: 0;
     right: 0;
