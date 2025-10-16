@@ -4,7 +4,6 @@
     background: #323232;
     color: #fff;
     padding: 10px 20px;
-    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
     font-size: 5rem;
     text-decoration: none;
     border-radius: 6px;
@@ -34,11 +33,4 @@ img {
     font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
 }
 
-@font-face {
-    font-family: "Sdfortimburtondemo";
-    src: url("fonts/Sdfortimburtondemo-ALoW2.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 
-}
