@@ -1,4 +1,4 @@
-/* make images responsive by default (don't cap individual images to 1300px) */
+
 img {
     max-width: 100%;
     height: auto;
@@ -7,14 +7,14 @@ img {
 
 .three-grid {
     display: grid;
-    /* make the grid fill the available page width so images scale up */
+    
     width: 100%;
     max-width: 100%;
-    padding: 0 24px; /* page padding */
+    padding: 0 24px; 
     box-sizing: border-box;
-    grid-template-columns: repeat(3, 1fr); /* three equal columns that fill the width */
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin: 0 auto; /* center the grid */
+    margin: 0 auto; 
     align-items: start;
 }
 
@@ -26,10 +26,10 @@ img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* fill the column while preserving aspect ratio */
+    object-fit: cover; 
 }
 
-/* reset default figure spacing and align content */
+
 figure {
     margin: 0;
 }
@@ -40,7 +40,7 @@ figure {
     align-items: stretch;
 }
 
-/* anchors that act like the old figure elements (image + caption) */
+
 .char-link {
     display: flex;
     flex-direction: column;
@@ -49,9 +49,9 @@ figure {
     color: inherit;
 }
 
-/* reserve visible space under each image for caption/text (CSS-only) */
+
 .three-grid img {
-    margin-bottom: 1.25rem; /* space for text under each image */
+    margin-bottom: 1.25rem; 
 }
 
 @font-face {
@@ -68,7 +68,7 @@ figure {
     padding: 0.25rem 0;
 }
 
-/* stack on small screens */
+
 @media (max-width: 1100px) {
     .three-grid {
         grid-template-columns: repeat(2, 1fr);
