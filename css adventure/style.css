@@ -12,12 +12,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 80vh; /* Adjust as needed for vertical centering */
+    min-height: 80vh; 
     text-align: center;
     position: relative;
 }
 
-/* for dragon adventure font */
+
 .font-face {
     position: relative;
     display: block;
@@ -32,7 +32,6 @@
 
 .play-button {
     position: absolute;
-    /* NTS: make the outline visible if you need to know where the button is! */ 
     left: 50%;
     top: 78%;
     width: 25%;
