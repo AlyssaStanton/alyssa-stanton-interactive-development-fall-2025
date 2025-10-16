@@ -1,16 +1,12 @@
 
-@font-face {
-    font-family: "Sdfortimburtondemo";
-    src: url("Sdfortimburtondemo-ALoW2.ttf");
 
-}
+
 #button{
     margin-top:10px;
     display: inline-block;
     background: #323232;
     color: #fff;
     padding: 10px 20px;
-    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
     font-size: 5rem;
     text-decoration: none;
     border-radius: 6px;
@@ -36,5 +32,4 @@ img {
     margin-top:100px;
     margin-bottom:1px;
     font-size: 6rem;
-    font-family: "Sdfortimburtondemo" , system-ui, sans-serif;
 }
