@@ -1,39 +1,41 @@
-#button{
-    margin-top:12px;
+#button {
+    margin-top: 12px;
     display: block; 
     width: fit-content;
     background: #323232;
     color: #fff;
     padding: 10px 20px;
- 
-    font-size: 15rem;
+    font-size: 7rem; /* Original size */
     text-decoration: none;
     border-radius: 6px;
     border: none;
     text-align: left;
-
 }
+
 img {
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
     display: block;
 }
-#text-box{
-    margin-top:1px;
-    margin-bottom:40px;
-    padding:15px;
-    font-size:16rem;
-    max-width:1970px;
-    height:auto;
+
+#text-box {
+    margin-top: 1px;
+    margin-bottom: 40px;
+    padding: 15px;
+    font-size: 1.5rem; /* Original size */
+    max-width: 1970px;
+    height: auto;
     outline: black solid 2px;
 }
+
 #NamePlate {
-    margin-top:100px;
-    margin-bottom:1px;
-    font-size: 26rem;
-   
+    margin-top: 100px;
+    margin-bottom: 1px;
+    font-size: 7rem; /* Original size */
 }
 
-#text{
-    font-size:10rem;
+#text {
+    font-size: 7rem; /* Original size */
 }
+
+/* Removed media queries to keep font sizes consistent */
