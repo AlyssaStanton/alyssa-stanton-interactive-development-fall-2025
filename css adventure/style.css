@@ -1,5 +1,4 @@
-.intro-img{
-   
+.intro-img {
     width: 100%;
     height: auto;
     max-width: none;
@@ -17,27 +16,26 @@
     position: relative;
 }
 
-
 .font-face {
     position: relative;
     display: block;
-    font-size: clamp(36px, 6vw + 2rem, 220px);
-    line-height: 0.9;
+    font-size: clamp(2rem, 6vw, 10rem);
+    line-height: 1;
     letter-spacing: 0.02em;
     max-width: 1200px;
     margin: 0.5rem auto 1rem auto;
     color: #292828; 
-     margin-left:520px;
+    text-align: center;
 }
 
 .play-button {
     position: absolute;
     left: 50%;
     top: 78%;
-    width: 25%;
-    height: 45%;
+    width: 20vw;
+    height: 20vw;
     transform: translate(-50%, -50%);
-    background-color:red;
+    background-color: red;
     border-radius: 50%;
     background: transparent;
     outline: transparent;
@@ -53,9 +51,11 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    
 }
 
 body {
     font-family: "DRAGON HUNTER", sans-serif;
+    font-size: clamp(16px, 2vw, 24px);
+    margin: 0;
+    padding: 0;
 }
