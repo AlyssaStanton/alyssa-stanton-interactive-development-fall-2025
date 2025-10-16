@@ -29,31 +29,28 @@
     margin-left:16px;
 }
 
-/* Fixed footer at bottom of page */
 .page-footer {
-    bottom: 0;
+    position: absolute; /* Position the footer relative to the boundary */
+    bottom: 0; /* Stick to the bottom of the boundary */
     left: 0;
     width: 100%;
     height: 60px;
-        display: block;
-        overflow: hidden;
-        width: 100vw;
+    display: block;
+    overflow: hidden;
     font-size: 1rem;
     z-index: 1000;
     font-family: sans-serif;
     object-fit: contain;
-    
-    }
+}
 
-    .page-footer img {
+.page-footer img {
     width: 100%;
     max-width: none;
     height: 100%;
     object-fit: cover;
     display: block;
     margin: 0;
-    }
-
+}
 
 body {
     margin-top: 0px;
@@ -66,7 +63,7 @@ body {
 .text-content {
     max-width: 600px;
     margin: 30px auto 0 auto;
-    padding: 10px 24px 48px; /* extra bottom padding so content sits above footer */
+    padding: 10px 24px 48px; /* thisextra bottom padding so content sits above footer */
     text-align: left;
     font-size: 1.1rem;
     line-height: 24px;
@@ -139,7 +136,6 @@ html {
     background-color:#ffffff;
 }
 
-/* View menu button highlight */
 .view-menu-button {
     color: rgb(56, 14, 120);
     text-decoration: none;
@@ -153,4 +149,19 @@ html {
 .view-menu-button:focus {
     outline: 3px solid rgba(81,23,106,0.25);
     outline-offset: 2px;
+}
+
+.content-boundary {
+    border: 2px solid rgb(81, 23, 106);
+    padding: 20px; 
+    margin: 0 auto; 
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #fff; 
+    position: relative; /* Ensure the footer is positioned relative to this box */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto; 
 }
