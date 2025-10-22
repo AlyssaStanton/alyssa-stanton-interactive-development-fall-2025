@@ -475,3 +475,29 @@ main .grid:last-of-type {
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 600px) {
+  .featured-card {
+    padding: 2rem;
+  }
+
+  .featured-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .featured-card p {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-header h3 {
+    font-size: 2rem;
+  }
+
+  .card-links a {
+    font-size: 1.6rem;
+  }
+}
