@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of Memories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="carousel">
+      <div class="carousel-slide active" style="background-image: url('pictures/new-orleans-trip.jpg')"></div>
+      <div class="carousel-slide" style="background-image: url('pictures/colorado-arrival.jpg')"></div>
+      <div class="carousel-slide" style="background-image: url('pictures/florida-dads-beach-house-22.jpg')"></div>
+      <div class="carousel-slide" style="background-image: url('pictures/DONT-DO-THIS.jpg')"></div>
+      <div class="carousel-slide" style="background-image: url('pictures/colorado-blizzard.jpg')"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>House of Memories</h1>
+      <p>Alyssa Stanton's House of Memories Photobook</p>
+    </div>
+  </header>
+
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Timeline</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="memory-section">
+    <div class="memory-card left">
+      <img src="pictures/sisters-me-baby_.jpg" alt="Sisters memory">
+      <div class="memory-text">
+        <h2>Childhood</h2>
+        <p>Scattered memories from early childhood days</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="memory-section alt">
+    <div class="memory-card right">
+      <img src="pictures/coos-bay-house.jpg" alt="California memory">
+      <div class="memory-text">
+        <h2>California and Oregon</h2>
+        <p>One Year, 2010</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="memory-section">
+    <div class="memory-card left">
+      <img src="pictures/florida-beach.jpg" alt="Florida beach memory">
+      <div class="memory-text">
+        <h2>Florida</h2>
+        <p>Four years, Sunny beaches and warm memories. 2012-2015
+        </p>
+      </div>
+    </div>
+  </section>
+
+   <section class="memory-section alt">
+    <div class="memory-card right">
+      <img src="pictures/colorado-blizzard.jpg" alt="Colorado memory">
+      <div class="memory-text">
+        <h2>Colorado</h2>
+        <p>Beautiful mountains and snowy winters. 2015-2020</p>
+      </div>
+    </div>
+  </section>
+  <section class="memory-section">
+    <div class="memory-card left">
+      <img src="pictures/new-orleans-trip-2.jpg" alt="Other Trips memory">
+      <div class="memory-text">
+        <h2>Other Trips</h2>
+        <p>New Orleans, Yellowstone National Park, Road Trips
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 House of Memories — Preserving the past in digital echoes.</p>
+  </footer>
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slides = document.querySelectorAll('.carousel-slide');
+      let currentSlide = 0;
+      
+      function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+      
+      // Change slide every 5 seconds
+      setInterval(nextSlide, 5000);
+    });
+  </script>
+</body>
+</html>
