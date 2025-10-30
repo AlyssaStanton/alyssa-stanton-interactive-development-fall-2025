@@ -4,106 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>House of Memories</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Verdana:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Hero Section -->
   <header class="hero">
-    <div class="carousel">
-      <div class="carousel-slide active" style="background-image: url('pictures/new-orleans-trip.jpg')"></div>
-      <div class="carousel-slide" style="background-image: url('pictures/colorado-arrival.jpg')"></div>
-      <div class="carousel-slide" style="background-image: url('pictures/florida-dads-beach-house-22.jpg')"></div>
-      <div class="carousel-slide" style="background-image: url('pictures/DONT-DO-THIS.jpg')"></div>
-      <div class="carousel-slide" style="background-image: url('pictures/colorado-blizzard.jpg')"></div>
-    </div>
+    <div class="hero-bg-1"></div>
+    <div class="hero-bg-2"></div>
+    <div class="hero-bg-3"></div>
+    <div class="hero-bg-4"></div>
+    <div class="hero-bg-5"></div>
     <div class="overlay"></div>
     <div class="hero-text">
       <h1>House of Memories</h1>
-      <p>Alyssa Stanton's House of Memories Photobook</p>
+      <p>Alyssa Stanton's Interactive Development Final</p>
     </div>
   </header>
 
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Timeline</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
+  <!-- Memory Grid -->
+  <div class="memories-grid">
+    <section class="memory-section">
+      <div class="memory-card polaroid">
+        <div class="tape"></div>
+        <img src="../../pictures/disneyworld2007.jpg" alt="Childhood memory">
+        <div class="memory-text">
+          <h2>Childhood</h2>
+          <p>Joy to the World a baby is born</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="memory-section">
-    <div class="memory-card left">
-      <img src="pictures/sisters-me-baby_.jpg" alt="Sisters memory">
-      <div class="memory-text">
-        <h2>Childhood</h2>
-        <p>Scattered memories from early childhood days</p>
+    <section class="memory-section">
+      <div class="memory-card polaroid">
+        <div class="tape"></div>
+        <img src="../../pictures/fisherman.jpg" alt="California, Oregon memory">
+        <div class="memory-text">
+          <h2>California, Oregon</h2>
+          <p>Early Childhood memories living in California and Oregon for a year.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory-section">
+      <div class="memory-card polaroid">
+        <div class="tape"></div>
+        <img src="../../pictures/florida-dads-beach-house.jpg" alt="Florida memory">
+        <div class="memory-text">
+          <h2>Florida</h2>
+          <p>Sunny memories of beach days and sunburns.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory-section">
+      <div class="memory-card polaroid">
+        <div class="tape"></div>
+        <img src="../../pictures/colorado-panorama.jpg" alt="Travel memory">
+        <div class="memory-text">
+          <h2>Colorado</h2>
+          <p>Beautiful mountain peaks, crisp air, and snowy nights.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory-section">
+      <div class="memory-card polaroid">
+        <div class="tape"></div>
+        <img src="../../pictures/royal-gorge-family-photo.jpg" alt="Family Trips memory">
+        <div class="memory-text">
+          <h2>Family Trips</h2>
+          <p>Different Photos from family trips over the years.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory-section">
+      <div class="memory-card polaroid">
+        <div class="tape"></div>
+        <img src="../../pictures/yellowstone-waterfall.jpg" alt="Nature memory">
+        <div class="memory-text">
+          <h2>Nature</h2>
+          <p>Forest whispers, ocean waves, the peace found in wild places.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <h2 class="timeline-title">Life Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-year="2003">
+        <div class="timeline-content">
+          <h3>2003</h3>
+          <p>A baby is born in Tulsa, OK. February 11.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-year="2007">
+        <div class="timeline-content">
+          <h3>2007</h3>
+          <p>Baby starts Pre School</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-year="2011">
+        <div class="timeline-content">
+          <h3>2010</h3>
+          <p>Move from Oklahoma to Oregon and California</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-year="2012">
+        <div class="timeline-content">
+          <h3>2012</h3>
+          <p>Move from Oklahoma to Florida</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-year="2015">
+        <div class="timeline-content">
+          <h3>2015</h3>
+          <p>Moved from Florida to Colorado</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-year="2020">
+        <div class="timeline-content">
+          <h3>2020</h3>
+          <p>Move from Colorado to Oklahoma</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="memory-section alt">
-    <div class="memory-card right">
-      <img src="pictures/coos-bay-house.jpg" alt="California memory">
-      <div class="memory-text">
-        <h2>California and Oregon</h2>
-        <p>One Year, 2010</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="memory-section">
-    <div class="memory-card left">
-      <img src="pictures/florida-beach.jpg" alt="Florida beach memory">
-      <div class="memory-text">
-        <h2>Florida</h2>
-        <p>Four years, Sunny beaches and warm memories. 2012-2015
-        </p>
-      </div>
-    </div>
-  </section>
-
-   <section class="memory-section alt">
-    <div class="memory-card right">
-      <img src="pictures/colorado-blizzard.jpg" alt="Colorado memory">
-      <div class="memory-text">
-        <h2>Colorado</h2>
-        <p>Beautiful mountains and snowy winters. 2015-2020</p>
-      </div>
-    </div>
-  </section>
-  <section class="memory-section">
-    <div class="memory-card left">
-      <img src="pictures/new-orleans-trip-2.jpg" alt="Other Trips memory">
-      <div class="memory-text">
-        <h2>Other Trips</h2>
-        <p>New Orleans, Yellowstone National Park, Road Trips
-        </p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
     <p>© 2025 House of Memories — Preserving the past in digital echoes.</p>
   </footer>
 
-
-
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const slides = document.querySelectorAll('.carousel-slide');
-      let currentSlide = 0;
-      
-      function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-      }
-      
-      // Change slide every 5 seconds
-      setInterval(nextSlide, 5000);
-    });
-  </script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
