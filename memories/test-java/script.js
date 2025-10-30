@@ -15,3 +15,13 @@ sand.addEventListener('mousemove', (e) => {
 
   setTimeout(() => sparkle.remove(), 600);
 });
+// Select the back button
+const backButton = document.getElementById('back-btn');
+
+// Add a click event listener
+backButton.addEventListener('click', () => {
+  // Get the URL from the data-href attribute
+  const href = backButton.getAttribute('data-href');
+  // Navigate to the URL
+  window.location.href = href;
+});
