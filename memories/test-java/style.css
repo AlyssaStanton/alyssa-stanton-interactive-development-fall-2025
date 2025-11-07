@@ -105,8 +105,14 @@ body {
   overflow: hidden;
 }
 
+.sparkle{
+  background-color:#d4a574;
+  position:absolute;
+  width:10px;
+  height:10px;
+}
 .sand:hover {
-  background: linear-gradient(to top, #ffe8b5, #fff2cc);
+  /* background: linear-gradient(to top, #ffe8b5, #fff2cc); */
 }
 
 .seagull {

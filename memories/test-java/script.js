@@ -9,9 +9,13 @@ sun.addEventListener('click', () => {
 sand.addEventListener('mousemove', (e) => {
   const sparkle = document.createElement('div');
   sparkle.classList.add('sparkle');
-  sparkle.style.left = `${e.clientX}px`;
-  sparkle.style.top = `${e.clientY}px`;
-  document.body.appendChild(sparkle);
+  let xCoordinate = Math.random() * 100;
+  let yCoordinate = Math.random() * 100;
+  sparkle.style.left = xCoordinate + "%";
+  sparkle.style.top = yCoordinate + "%";
+  document.querySelectorAll(".sand").forEach(function(el){
+    el.appendChild(sparkle);
+  })
 
   setTimeout(() => sparkle.remove(), 600);
 });
