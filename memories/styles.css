@@ -1,0 +1,190 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f7f5f0;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px 30px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header .subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #c5c3c0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 40px;
+  margin: 20px 0;
+  display: none; /* For fade-in jQuery */
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Year link inside h2 - keep heading appearance but make it a link */
+.timeline-item h2 .year-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.timeline-item h2 .year-link:hover {
+  text-decoration: underline;
+}
+
+/* Subcategory links: make them look like sub-headings */
+.sub-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.sub-link:hover {
+  text-decoration: underline;
+}
+
+/* Make year headers look interactive when they toggle subcategories */
+.timeline-item h2[role="button"] {
+  cursor: pointer;
+  outline: none;
+}
+.timeline-item h2[role="button"]:focus {
+  box-shadow: 0 0 0 3px rgba(0, 120, 215, 0.25);
+  border-radius: 4px;
+}
+
+/* Toggle button next to the year header */
+.toggle-sub {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.toggle-sub:focus {
+  box-shadow: 0 0 0 3px rgba(0,120,215,0.25);
+}
+.toggle-sub[aria-expanded="true"] {
+  transform: rotate(90deg);
+}
+
+.timeline-item .event {
+  font-size: 1rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.timeline-item .description {
+  font-size: 1rem;
+  color: #444;
+}
+
+.subcategories {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.sub-item h3 {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.sub-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.photo {
+  width: 120px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.timeline-item:nth-child(odd) .photo {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.photo img {
+  width: 100%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Timeline circle markers */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #ff7f50;
+  border-radius: 50%;
+  top: 30px;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -8px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -8px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Blizzard — jQuery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Display fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <button id="backButton">← Back</button>
+    <button id="nextButton">Next →</button>
+
+  <main id="scene">
+    
+    <svg class="mountains" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <!-- paler daytime sky: very light top -> soft cyan -> muted azure -> pale navy -->
+          <stop offset="0%" stop-color="#f8feff"/>
+          <stop offset="35%" stop-color="#bfe9f7"/>
+          <stop offset="65%" stop-color="#8fbde7"/>
+          <stop offset="100%" stop-color="#5a7fae"/>
+        </linearGradient>
+        <linearGradient id="far-mount" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#6f8195"/>
+          <stop offset="100%" stop-color="#2e3945"/>
+        </linearGradient>
+        <linearGradient id="mid-mount" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#51667a"/>
+          <stop offset="100%" stop-color="#1f2830"/>
+        </linearGradient>
+        <linearGradient id="front-mount" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#47586b"/>
+          <stop offset="100%" stop-color="#1b232b"/>
+        </linearGradient>
+        <!-- Night-mode gradients -->
+        <linearGradient id="night-sky" x1="0" y1="0" x2="0" y2="1">
+          <!-- dramatic night sky: near-black -> deep violet -> indigo -> midnight navy -->
+          <stop offset="0%" stop-color="#00010a"/>
+          <stop offset="35%" stop-color="#050328"/>
+          <stop offset="65%" stop-color="#15194a"/>
+          <stop offset="100%" stop-color="#02021a"/>
+        </linearGradient>
+        <linearGradient id="night-far-mount" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#2b3b51"/>
+          <stop offset="100%" stop-color="#0f1a26"/>
+        </linearGradient>
+        <linearGradient id="night-mid-mount" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#223247"/>
+          <stop offset="100%" stop-color="#0b1620"/>
+        </linearGradient>
+        <linearGradient id="night-front-mount" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#162432"/>
+          <stop offset="100%" stop-color="#061017"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky -->
+      <rect width="100%" height="100%" fill="url(#sky)" />
+
+      <!-- Background Mountains -->
+      <path d="M0,400 L150,250 L300,380 L450,270 L600,370 L750,260 L900,380 L1050,250 L1200,400 L1200,600 L0,600 Z"
+            fill="url(#far-mount)" opacity="0.6"/>
+
+      <!-- Mid Mountains -->
+      <path d="M0,460 L200,320 L350,460 L500,330 L650,450 L800,310 L950,460 L1100,320 L1200,460 L1200,600 L0,600 Z"
+            fill="url(#mid-mount)" opacity="0.8"/>
+
+      <!-- Foreground Mountains -->
+      <path id="front-mountain" 
+            d="M0,520 L150,400 L300,520 L450,370 L600,520 L750,390 L900,520 L1050,410 L1200,520 L1200,600 L0,600 Z" 
+            fill="url(#front-mount)"/>
+
+      <!-- Clouds -->
+      <g id="clouds">
+        <!-- Front Row Clouds -->
+        <g class="cloud" transform="translate(100,90)">
+          <ellipse cx="0" cy="0" rx="70" ry="30"/>
+          <ellipse cx="45" cy="-8" rx="50" ry="25"/>
+          <ellipse cx="-50" cy="-8" rx="50" ry="25"/>
+        </g>
+        <g class="cloud" transform="translate(350,70)">
+          <ellipse cx="0" cy="0" rx="90" ry="35"/>
+          <ellipse cx="60" cy="-5" rx="55" ry="25"/>
+          <ellipse cx="-60" cy="-5" rx="55" ry="25"/>
+        </g>
+        <g class="cloud" transform="translate(600,60)">
+          <ellipse cx="0" cy="0" rx="100" ry="40"/>
+          <ellipse cx="70" cy="-10" rx="50" ry="25"/>
+          <ellipse cx="-70" cy="-10" rx="50" ry="25"/>
+        </g>
+        <g class="cloud" transform="translate(850,80)">
+          <ellipse cx="0" cy="0" rx="90" ry="35"/>
+          <ellipse cx="65" cy="-6" rx="45" ry="22"/>
+          <ellipse cx="-65" cy="-6" rx="45" ry="22"/>
+        </g>
+        <g class="cloud" transform="translate(1100,100)">
+          <ellipse cx="0" cy="0" rx="70" ry="28"/>
+          <ellipse cx="45" cy="-6" rx="40" ry="18"/>
+          <ellipse cx="-45" cy="-6" rx="40" ry="18"/>
+        </g>
+
+        <!-- Back Row Clouds -->
+        <g class="cloud" transform="translate(220,40)" opacity="0.7">
+          <ellipse cx="0" cy="0" rx="80" ry="30"/>
+          <ellipse cx="55" cy="-5" rx="45" ry="20"/>
+          <ellipse cx="-55" cy="-5" rx="45" ry="20"/>
+        </g>
+        <g class="cloud" transform="translate(480,30)" opacity="0.7">
+          <ellipse cx="0" cy="0" rx="100" ry="35"/>
+          <ellipse cx="70" cy="-8" rx="50" ry="22"/>
+          <ellipse cx="-70" cy="-8" rx="50" ry="22"/>
+        </g>
+        <g class="cloud" transform="translate(750,40)" opacity="0.7">
+          <ellipse cx="0" cy="0" rx="90" ry="33"/>
+          <ellipse cx="60" cy="-6" rx="45" ry="20"/>
+          <ellipse cx="-60" cy="-6" rx="45" ry="20"/>
+        </g>
+        <g class="cloud" transform="translate(1000,50)" opacity="0.7">
+          <ellipse cx="0" cy="0" rx="80" ry="30"/>
+          <ellipse cx="55" cy="-5" rx="40" ry="18"/>
+          <ellipse cx="-55" cy="-5" rx="40" ry="18"/>
+        </g>
+      </g>
+    </svg>
+
+  <!-- Day / Night toggle (sun / moon) -->
+  <button id="dayToggle" aria-pressed="false" aria-label="Toggle day and night">☀️</button>
+
+    <div id="snow"></div>
+
+    <div class="ui">
+      <p id="colorado-title">Colorado, 2015</p>
+  <p id="colorado-sub" class="subheading" aria-hidden="true">Beloved, snowy memories of a place that felt like home. Snow days, hot chocolate, and warm mornings by the fire.</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

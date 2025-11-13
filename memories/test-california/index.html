@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>California — 2010</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cabin:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="scene">
+    <div id="sky">
+      <div id="sun" title="toggle day / sunset"></div>
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
+    </div>
+
+    <div id="ocean"></div>
+    <div id="sand"></div>
+
+    <div id="palms">
+      <div class="palm" style="left:15%; transform:scale(1);"></div>
+      <div class="palm" style="left:25%; transform:scale(0.8) rotate(-2deg);"></div>
+      <div class="palm" style="left:70%; transform:scale(1.2) rotate(1deg);"></div>
+      <div class="palm" style="left:78%; transform:scale(0.7) rotate(3deg);"></div>
+    </div>
+
+    <!-- Centered Title & Subtitle -->
+    <div id="titleWrap">
+      <div id="title">
+        <span id="typeText"></span><span id="caret"></span>
+      </div>
+      <div id="subtitle">
+        <span id="typeSub"></span><span id="caretSub"></span>
+      </div>
+    </div>
+  </div>
+
+  <button id="backButton">← Back</button>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

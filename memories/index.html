@@ -4,152 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>House of Memories</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Verdana:wght@400;700&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <!-- Hero Carousel -->
-  <header class="hero">
-    <div class="hero-bg-1"></div>
-    <div class="hero-bg-2"></div>
-    <div class="hero-bg-3"></div>
-    <div class="hero-bg-4"></div>
-    <div class="hero-bg-5"></div>
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>House of Memories</h1>
-      <p>Alyssa Stanton's Interactive Development Final</p>
-    </div>
+  <header>
+    <h1>House of Memories</h1>
+    <p class="subtitle">A journey through the years</p>
   </header>
 
-  <!-- Memory Grid -->
-  <div class="memories-grid">
-    <section class="memory-section">
-      <div class="memory-card polaroid">
-        <div class="tape"></div>
-        <img src="pictures/disneyworld2007.jpg" alt="Childhood memory">
-        <div class="memory-text">
-          <h2>Childhood</h2>
-          <p>Joy to the World a baby is born</p>
-        </div>
+  <main class="timeline">
+    <div class="timeline-item" data-year="2003, Oklahoma">
+      <div class="content">
+  <h2><a class="year-link" href="#">2003, Oklahoma <span class="event">(Birth)</span></a></h2>
+        <p class="description">A baby is born in Tulsa, OK on February 11, 2003 at 12:27 AM.</p>
       </div>
-    </section>
-
-    <section class="memory-section">
-      <div class="memory-card polaroid">
-        <div class="tape"></div>
-        <img src="pictures/coos-bay-house.jpg" alt="California, Oregon memory">
-        <div class="memory-text">
-          <h2>California, Oregon</h2>
-          <p>Early Childhood memories living in California and Oregon for a six months each.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="memory-section">
-      <div class="memory-card polaroid">
-        <div class="tape"></div>
-        <img src="pictures/florida-dads-beach-house.jpg" alt="Florida memory">
-        <div class="memory-text">
-          <h2><a href="test-java/index.html">Florida</a></h2>
-          <p>Sunny memories of beach days and sunburns.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="memory-section">
-      <div class="memory-card polaroid">
-        <div class="tape"></div>
-        <img src="pictures/colorado-panorama.jpg" alt="Travel memory">
-        <div class="memory-text">
-          <h2>Colorado</h2>
-          <p>Beautiful mountain peaks, crisp air, and snowy nights.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="memory-section">
-      <div class="memory-card polaroid">
-        <div class="tape"></div>
-        <img src="pictures/royal-gorge-family-photo.jpg" alt="Family Trips memory">
-        <div class="memory-text">
-          <h2>Family Trips</h2>
-          <p>Different Photos from family trips over the years.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="memory-section">
-      <div class="memory-card polaroid">
-        <div class="tape"></div>
-        <img src="pictures/yellowstone-waterfall.jpg" alt="Nature memory">
-        <div class="memory-text">
-          <h2>Nature</h2>
-          <p>Trips outdoors, camping, and experiencing nature</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Timeline Section -->
-  <section class="timeline-section">
-    <h2 class="timeline-title">Life Timeline</h2>
-    <div class="timeline">
-      <div class="timeline-item" data-year="2003">
-        <div class="timeline-content">
-          <h3>2003</h3>
-          <p>A baby is born in Tulsa, OK. February 11.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-year="2007">
-        <div class="timeline-content">
-          <h3>2007</h3>
-          <p>Baby starts Pre School</p>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-year="2011">
-        <div class="timeline-content">
-          <h3>2010</h3>
-          <p>Move from Oklahoma to Oregon and California</p>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-year="2012">
-        <div class="timeline-content">
-          <h3>2012</h3>
-          <p>Move from Oklahoma to Florida</p>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-year="2015">
-        <div class="timeline-content">
-          <h3>2015</h3>
-          <p>Moved from Florida to Colorado</p>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-year="2020">
-        <div class="timeline-content">
-          <h3>2020</h3>
-          <p>Move from Colorado to Oklahoma</p>
-        </div>
+      <div class="photo">
+        <img src="pictures/baby-strawberry.jpg" alt="2003 Photo">
       </div>
     </div>
-  </section>
 
+    <div class="timeline-item" data-year="2010 - Sacramento, California. Coos Bay, Oregon">
+      <div class="content">
+  <h2><a class="year-link" href="#">2010 - California, Oregon</a></h2>
+  <button class="toggle-sub" aria-controls="sub-2010" aria-expanded="false" title="Toggle 2010 subcategories">▸</button>
+        <p class="description">Description for 2010 goes here.</p>
+  <div id="sub-2010" class="subcategories">
+          <div class="sub-item">
+            <h3><a class="sub-link" href="#">January 2010 - June 2010 Coos Bay, Oregon</a></h3>
+            <p>Move with family to Coos Bay, Oregon. First big move.</p>
+          </div>
+          <div class="sub-item">
+            <h3><a class="sub-link" href="test-california/index.html">June 2010 - December 2010 Sacramento, California</a></h3>
+            <p>Move with family to Sacramento, California.</p>
+          </div>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="pictures/coos-bay-mom.jpg" alt="2010 Photo">
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 House of Memories — Alyssa Stanton's Interactive Development Final</p>
-  </footer>
+    <div class="timeline-item" data-year="2011">
+      <div class="content">
+  <h2><a class="year-link" href="#">2011, Oklahoma</a></h2>
+        <p class="description">Family moves back to Oklahoma.</p>
+      </div>
+      <div class="photo">
+        <img src="pictures/snow-baby-oklahoma.jpg" alt="2011 Photo">
+      </div>
+    </div>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <div class="timeline-item" data-year="2012">
+      <div class="content">
+  <h2><a class="year-link" href="test-java/index.html">2012, Florida</a></h2>
+        <p class="description"> Family moves to Florida</p>
+      </div>
+      <div class="photo">
+        <img src="pictures/florida-beach.jpg" alt="2012 Photo">
+      </div>
+    </div>
+
+    <div class="timeline-item" data-year="2015">
+      <div class="content">
+          <h2><a class="year-link" href="colorado/index.html" data-href="colorado/index.html">2015, Colorado</a></h2>
+        <p class="description">Family moves to Colorado</p>
+      </div>
+      <div class="photo">
+        <img src="pictures/colorado-arrival.jpg" alt="2015 Photo">
+      </div>
+    </div>
+
+    <div class="timeline-item" data-year="2020">
+      <div class="content">
+  <h2><a class="year-link" href="#">2020</a></h2>
+        <p class="description">Family moves to Oklahoma, Arkansas</p>
+      </div>
+      <div class="photo">
+        <img src="placeholder.png" alt="2020 Photo">
+      </div>
+    </div>
+  </main>
 </body>
 </html>
-
