@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <div class="title-type">
+  <span class="text">Oregon, 2010</span>
+  <span class="cursor"></span>
+</div>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- caption that types after the main title finishes -->
+  <div class="caption-type" aria-hidden="true">
+    <span class="caption-text"></span><span class="caption-cursor"></span>
+  </div>
+
+  <div class="scene">
+    <header class="hud">
+      <a class="scene-nav back" href="../index.html" data-href="../index.html" aria-label="Back">← Back</a>
+      <a class="scene-nav next" href="../test-java/index.html" data-href="../test-java/index.html" aria-label="Next">Next →</a>
+      <button id="rain-toggle">Toggle Rain</button>
+    </header>
+
+    <div class="sky">
+      <div class="cloud pill c1"></div>
+      <div class="cloud pill c2"></div>
+      <div class="cloud pill c3"></div>
+
+      <div class="sunset"></div>
+      <div class="mist"></div>
+    </div>
+
+    <div class="mountains">
+      <div class="mountain m1"></div>
+      <div class="mountain m2"></div>
+      <div class="mountain m3"></div>
+    </div>
+
+   
+
+    <div class="river"></div>
+
+    <!-- rain container — raindrops will be injected by script -->
+    <div class="rain" id="rain"></div>
+
+  </div>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

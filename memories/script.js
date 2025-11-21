@@ -1,5 +1,6 @@
 $(document).ready(function() {
   console.log('house-of-memories-test: script ready');
+  
   // Simple jQuery fade-in effect for timeline items
   $('.timeline-item').each(function(index) {
     $(this).delay(200 * index).fadeIn(800);
@@ -11,7 +12,8 @@ $(document).ready(function() {
   // Ensure year links don't navigate away and are easy to inspect
   var $yearLinks = $('.timeline-item h2 .year-link');
   $yearLinks.attr('role', 'link');
-  // handle year links: prefer data-href for JS navigation; otherwise allow real hrefs
+  
+  // Handle year links: prefer data-href for JS navigation; otherwise allow real hrefs
   $(document).on('click', '.year-link', function(e) {
     var dataHref = $(this).attr('data-href');
     if (dataHref) {
@@ -30,11 +32,15 @@ $(document).ready(function() {
     console.log('year-link clicked (no target):', $(this).text());
   });
 
-  // Prevent navigation for subcategory links and log clicks
+  // Allow sub-link navigation
   $(document).on('click', '.sub-link', function(e) {
+    var hrefAttr = $(this).attr('href');
+    if (hrefAttr && hrefAttr !== '#') {
+      console.log('sub-link navigation to href:', hrefAttr);
+      return; // Allow navigation
+    }
     e.preventDefault();
-    console.log('sub-link clicked:', $(this).text());
-    // Optional: you could expand its parent timeline item here if desired
+    console.log('sub-link clicked (no target):', $(this).text());
   });
 
   // Use a dedicated toggle button for reliability
@@ -51,10 +57,10 @@ $(document).ready(function() {
       }
       var wasVisible = $sub.is(':visible');
       $sub.stop(true, true).slideToggle(200);
-  var newExpanded = (!wasVisible).toString();
-  $(this).attr('aria-expanded', newExpanded);
-  // reflect expanded state on the heading link too
-  $item.find('h2 .year-link').attr('aria-expanded', newExpanded);
+      var newExpanded = (!wasVisible).toString();
+      $(this).attr('aria-expanded', newExpanded);
+      // Reflect expanded state on the heading link too
+      $item.find('h2 .year-link').attr('aria-expanded', newExpanded);
       console.log('toggle-sub: toggled; newExpanded=', newExpanded);
     } catch (err) {
       console.error('Error in toggle-sub click handler:', err);
