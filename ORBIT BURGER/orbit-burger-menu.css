@@ -1,10 +1,10 @@
 html {
-    font-size: 16px; /* Base font size */
+    font-size: 16px;
     background-color: #ffffff;
 }
 
 body {
-    font-size: calc(1 * 1rem); /* Default body font size */
+    font-size: calc(1 * 1rem);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,19 +14,20 @@ body {
     width: calc(100% - 2rem);
     height: 6rem;
     border-bottom: 0.2rem solid #51176a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
     text-align: center;
+    line-height: 6rem; /* Vertically center inline elements */
+    white-space: nowrap; /* Prevent wrapping of header content */
 }
 
 .header-line {
-    flex: 1;
+    display: inline-block;
     height: 0.4rem;
     background: #51176a;
     border-radius: 0.2rem;
     min-width: 2.5rem;
+    width: calc(50% - 9.375rem); /* Adjusted for the header image width */
+    vertical-align: middle; /* Align with the image */
 }
 
 .header-image {
@@ -34,51 +35,64 @@ body {
     max-width: 18.75rem;
     object-fit: contain;
     border-radius: 0.5rem;
-    margin: 0 1rem;
+    display: inline-block;
+    vertical-align: middle; /* Align with the header lines */
 }
 
 .text-content {
     max-width: calc(100% - 2rem);
     margin: 2rem auto;
     padding: 1rem;
-    font-size: calc(1 * 1rem); /* Default text content font size */
+    font-size: calc(1 * 1rem);
     line-height: calc(1.5 * 1rem);
 }
 
 h2 {
-    font-size: calc(2 * 1rem); /* Larger font size for main headings */
+    font-size: calc(2 * 1rem);
     color: rgb(56, 14, 120);
     margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: calc(1.5 * 1rem); /* Slightly smaller than h2 */
+    font-size: calc(1.5 * 1rem);
     color: rgb(56, 14, 120);
     margin-bottom: 0.5rem;
+}
+
+.menu-rows {
+    margin: 0 auto;
+    width: calc(100% - 2rem);
+}
+
+.menu-column {
+    float: left;
+    width: calc(33.33% - 1rem); /* Three columns by default */
+    margin: 0.5rem;
 }
 
 .menu-item {
     margin-bottom: 1rem;
     padding: 0.5rem;
-    border-bottom: 0.1rem solid rgba(81, 23, 106, 0.12);
+    border-bottom: 0.1rem solid rgb(96, 24, 126);
 }
 
 .menu-item h4 {
-    font-size: calc(1.2 * 1rem); /* Slightly smaller than h3 */
+    font-size: calc(1.2 * 1rem);
     margin: 0;
+	color:#51176a
 }
 
 .menu-item p {
-    font-size: calc(1 * 1rem); /* Same as body font size */
+    font-size: calc(1 * 1rem);
     margin: 0.5rem 0 0 0;
-    color: #51176a;
+    color: #51176a80;
 }
 
 .menu-item-price {
     float: right;
     font-weight: bold;
     color: rgb(56, 14, 120);
-    font-size: calc(1 * 1rem); /* Same as body font size */
+    font-size: calc(1 * 1rem);
 }
 
 .page-footer {
@@ -87,10 +101,8 @@ h3 {
     left: 0;
     width: 100%;
     height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #fff;
+    text-align: center;
 }
 
 .page-footer img {
@@ -99,25 +111,14 @@ h3 {
     object-fit: contain;
 }
 
+@media (max-width: 1000px) {
+    .menu-column {
+        width: calc(50% - 1rem); /* Two columns for medium screens */
+    }
+}
+
 @media (max-width: 600px) {
-    .text-content {
-        max-width: calc(100% - 1rem);
-        padding: 0.5rem;
-    }
-
-    h2 {
-        font-size: calc(1.5 * 1rem); /* Adjusted for smaller screens */
-    }
-
-    h3 {
-        font-size: calc(1.2 * 1rem);
-    }
-
-    .menu-item h4 {
-        font-size: calc(1 * 1rem);
-    }
-
-    .menu-item p {
-        font-size: calc(0.9 * 1rem);
+    .menu-column {
+        width: calc(100% - 1rem); /* One column for small screens */
     }
 }
