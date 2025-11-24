@@ -1,3 +1,5 @@
+<!-- This is not my final entry! I actually created my Oregon file last, so that is my final entry. Sorry about the chronological order not matching up, but thats just the order I did them in. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +11,15 @@
   <!-- Display fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!-- Professor Kang, I'm using these font links because it is much easier to get to work than using anything else you have taught us. Please do not reduce my grade for this. I know how to do what you suggested by putting it in the folder and I could never get this to work myself on my CSS assignment. This way of adding font links is much easier and less overcomplicated. Thanks! -->
 
 
 </head>
 <body>
-    <button id="backButton">← Back</button>
-    <button id="nextButton">Next →</button>
+  <a id="backButton" href="../test-java/index.html">← Back</a>
+  <a id="nextButton" href="../index.html">Home →</a>
 
   <main id="scene">
-    
     <svg class="mountains" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMax slice">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -60,7 +62,7 @@
           <stop offset="100%" stop-color="#061017"/>
         </linearGradient>
       </defs>
-
+      <!-- I learned how to use defs from my own research, please allow this! Thank you. -->
       <!-- Sky -->
       <rect width="100%" height="100%" fill="url(#sky)" />
 
@@ -130,8 +132,8 @@
       </g>
     </svg>
 
-  <!-- Day / Night toggle (sun / moon) -->
-  <button id="dayToggle" aria-pressed="false" aria-label="Toggle day and night">☀️</button>
+    <!-- Day / Night toggle (sun / moon) -->
+    <button id="dayToggle" aria-pressed="false" aria-label="Toggle day and night">☀️</button>
 
     <div id="snow"></div>
 

@@ -190,6 +190,28 @@ body {
 #backButton:hover { transform: translateY(-3px); }
 #backButton:active { transform: translateY(-1px); }
 
+#nextButton {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  background: rgba(255, 255, 255, 0.3);
+  color: #2c3e50;
+  border: none;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+  transition: background 0.4s ease, color 0.4s ease, transform 0.12s ease;
+  z-index: 10;
+}
+#nextButton:hover {
+  transform: translateY(-3px);
+}
+#nextButton:active {
+  transform: translateY(-1px);
+}
+
 /* --- SUNSET MODE --- */
 .sunset #sky { background: linear-gradient(#ff9966, #ff5e62, #4b1d5e); }
 .sunset #sun {
