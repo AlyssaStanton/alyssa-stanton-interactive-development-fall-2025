@@ -15,10 +15,11 @@ sand.addEventListener('mousemove', (e) => {
   sparkle.style.top = yCoordinate + "%";
   document.querySelectorAll(".sand").forEach(function(el){
     el.appendChild(sparkle);
-  })
+  });
 
   setTimeout(() => sparkle.remove(), 600);
 });
+
 // Select the back button
 const backButton = document.getElementById('back-btn');
 
@@ -29,3 +30,21 @@ backButton.addEventListener('click', () => {
   // Navigate to the URL
   window.location.href = href;
 });
+
+// Typewriter effect for the location text
+const locationElement = document.querySelector('.location');
+const locationText = locationElement.textContent.trim();
+locationElement.textContent = ''; // Clear the text initially
+
+let index = 0;
+
+function typeWriter() {
+  if (index < locationText.length) {
+    locationElement.textContent += locationText[index];
+    index++;
+    setTimeout(typeWriter, 100); // Adjust typing speed here (100ms per character)
+  }
+}
+
+// Start the typewriter effect
+typeWriter();

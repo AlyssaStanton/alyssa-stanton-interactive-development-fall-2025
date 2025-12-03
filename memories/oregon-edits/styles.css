@@ -1,4 +1,9 @@
-/* styles.css - minimal Oregon vibe */
+
+
+html{
+  font-size: 16px;
+}
+
 :root{
   --sky1: #7aa7d9;
   --sky2: #426a8f;
@@ -79,7 +84,7 @@ body{
   z-index:2;
 }
 
-/* mountains */
+
 .mountains{ position:absolute; bottom:90px; left:0; right:0; height:260px; z-index:4; }
 .mountain{
   position:absolute;
@@ -92,7 +97,7 @@ body{
 .m2{ left:30%; width:55%; height:200px; opacity:0.9; z-index:3}
 .m3{ left:60%; width:45%; height:170px; opacity:0.8; z-index:2}
 
-/* trees */
+
 .trees{
   position:absolute;
   bottom:60px;
@@ -147,16 +152,13 @@ body{
   opacity:0.6;
 }
 
-/* ---------------------------
-   TYPEWRITER TITLE (centered)
-   --------------------------- */
 .title-type {
   position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
   font-family:"Courier New", monospace;
-  font-size:42px;
+  font-size:calc(10 * 1.15rem);
   color:white;
   white-space:nowrap;
   display:flex;
@@ -174,7 +176,7 @@ body{
   width:2px;
   height:1em;
   background:white;
-  margin-left:4px;
+  margin-left:0px;
   animation: blink 0.8s infinite;
 }
 
@@ -188,9 +190,9 @@ body{
   50%,100% { opacity:0; }
 }
 
-/* ---------------------------
-   Rain
-   --------------------------- */
+.caption-type {
+  padding-top: 50px; 
+}
 .rain{
   position:absolute;
   inset:0;
@@ -264,14 +266,12 @@ body{
   .caption-type{ font-size:16px; top: calc(50% + 48px); }
 }
 
-/* ---------------------------
-   PILL-SHAPED CLOUDS
-   --------------------------- */
+
 .cloud.pill {
   position:absolute;
   background: rgba(255, 255, 255, 0.55);
-  width: 180px;      /* long capsule shape */
-  height: 55px;      /* short rounded height */
+  width: 180px;      
+  height: 55px;      
   border-radius: 50px;
   filter: blur(2px);
   z-index: 3;

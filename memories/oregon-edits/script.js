@@ -45,16 +45,16 @@ $(function () {
   // $('#rain-toggle').trigger('click');
 
   // After the main title finishes its CSS type animation, start the caption typewriter
-  var captionText = 'Rainy days and beautiful scenery';
-  var $captionContainer = $('.caption-type');
-  var $captionSpan = $('.caption-type .caption-text');
+  let captionText = 'Rainy days and beautiful scenery';
+  let $captionContainer = $('.caption-type');
+  let $captionSpan = $('.caption-type .caption-text');
   $('.title-type .text').on('animationend', function () {
     // reveal caption container
     $captionContainer.attr('aria-hidden', 'false').css('visibility', 'visible');
     $captionSpan.text('');
-    var i = 0;
-    var t = 45; // ms per character
-    var typer = setInterval(function () {
+    let i = 0;
+    let t = 45; // ms per character
+    let typer = setInterval(function () {
       $captionSpan.text($captionSpan.text() + captionText.charAt(i));
       i++;
       if (i >= captionText.length) {
